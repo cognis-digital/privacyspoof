@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/privacyspoof",
+  "version": "0.2.0",
+  "description": "JavaScript port of privacyspoof (Cognis Neural Suite)",
+  "bin": {
+    "privacyspoof": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
