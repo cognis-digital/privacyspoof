@@ -1,0 +1,10 @@
+{
+  "presets": [
+    {"city": "new_york", "lat": 40.7128, "lon": -74.0060, "tz": "America/New_York", "locale": "en-US"},
+    {"city": "london",   "lat": 51.5074, "lon": -0.1278,  "tz": "Europe/London",   "locale": "en-GB"},
+    {"city": "tokyo",    "lat": 35.6762, "lon": 139.6503, "tz": "Asia/Tokyo",      "locale": "ja-JP"},
+    {"city": "berlin",   "lat": 52.5200, "lon": 13.4050,  "tz": "Europe/Berlin",   "locale": "de-DE"},
+    {"city": "sydney",   "lat": -33.8688,"lon": 151.2093, "tz": "Australia/Sydney","locale": "en-AU"}
+  ],
+  "_note": "Set geolocation, timezone, AND locale together. A Tokyo geo with a New York timezone is a red flag to fingerprinters."
+}

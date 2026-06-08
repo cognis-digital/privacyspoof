@@ -1,0 +1,8 @@
+! Cookie-banner & annoyance cosmetic filters (AdGuard/uBlock syntax)
+##.cc-banner
+##.cookie-notice
+###onetrust-banner-sdk
+##.ot-sdk-container
+##[aria-label="cookieconsent"]
+##.gdpr
+##.consent-modal

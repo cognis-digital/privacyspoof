@@ -1,0 +1,39 @@
+# privacyspoof — browser privacy hardening, blocklists & spoofing kit
+
+> Part of the **[Cognis Neural Suite](https://github.com/cognis-digital)** · COCL v1.0 · domain: `privacy`
+
+Curated **AdGuard/uBlock filter lists**, **tracker/cookie** controls, and **user-agent**,
+**geolocation**, **timezone**, and **session** spoofing presets — with a **browser compatibility
+matrix** so you know exactly what works where.
+
+> ⚠️ **Authorized & lawful use only.** Spoofing is for privacy, testing, and research. Some sites'
+> ToS prohibit it; you are responsible for how you use this.
+
+## Contents
+
+| Path | What |
+|---|---|
+| `filters/adguard-base.txt` | AdGuard/uBlock-syntax base blocklist |
+| `filters/trackers.txt` | analytics/tracker domains |
+| `filters/cookies-annoyances.txt` | cookie-banner / annoyance cosmetic rules |
+| `spoof/user-agents.json` | UA strings + compatibility notes |
+| `spoof/geolocation.json` | lat/lon/timezone presets |
+| `spoof/sessions.md` | session/cookie isolation playbook |
+| `COMPATIBILITY.md` | browser support matrix per technique |
+| `privacyspoof.py` | CLI: pick a UA / geo, emit configs |
+
+## Quick start
+
+```bash
+python privacyspoof.py ua --os windows --browser chrome
+python privacyspoof.py geo --city tokyo
+python privacyspoof.py filters --format ublock > my-filters.txt
+```
+
+## Importing the filter lists
+
+- **uBlock Origin:** Dashboard → Filter lists → Import → paste the raw URL of `filters/*.txt`.
+- **AdGuard:** Settings → Filters → Custom → Add → raw URL.
+
+See `COMPATIBILITY.md` before enabling spoofing — fingerprint-consistency matters (a Windows UA
+with a macOS platform string is *more* identifying, not less).

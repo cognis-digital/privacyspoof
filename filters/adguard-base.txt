@@ -1,0 +1,20 @@
+! Title: Cognis privacyspoof — base blocklist
+! Expires: 3 days
+! Homepage: https://github.com/cognis-digital/privacyspoof
+! License: COCL-1.0
+||doubleclick.net^
+||googlesyndication.com^
+||google-analytics.com^
+||analytics.tiktok.com^
+||connect.facebook.net^
+||scorecardresearch.com^
+||hotjar.com^
+||fullstory.com^
+||segment.io^
+||mixpanel.com^
+||branch.io^
+||adservice.google.*^
+! cosmetic — generic cookie banners
+##.cookie-banner
+##.cookie-consent
+##div[class*="cookie"][class*="consent"]

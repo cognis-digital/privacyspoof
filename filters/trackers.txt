@@ -1,0 +1,16 @@
+# Tracker domains (one per line). Source-curated; PRs welcome.
+google-analytics.com
+googletagmanager.com
+doubleclick.net
+facebook.com/tr
+scorecardresearch.com
+quantserve.com
+adnxs.com
+criteo.com
+taboola.com
+outbrain.com
+hotjar.com
+mixpanel.com
+amplitude.com
+segment.com
+fullstory.com
