@@ -37,3 +37,16 @@ python privacyspoof.py filters --format ublock > my-filters.txt
 
 See `COMPATIBILITY.md` before enabling spoofing — fingerprint-consistency matters (a Windows UA
 with a macOS platform string is *more* identifying, not less).
+
+## How it fits
+
+```mermaid
+flowchart LR
+  U[You / CI / Agent] --> R[privacyspoof]
+  R --> O[Outputs & artifacts]
+  R --> M[MCP / JSON]
+  M --> AI[AI agents]
+  R --> S[Cognis Neural Suite]
+```
+
+**Explore the suite →** [🗂️ all tools](https://github.com/cognis-digital/cognis-neural-suite) · [⭐ awesome-cognis](https://github.com/cognis-digital/awesome-cognis) · [🔗 cognis-sources](https://github.com/cognis-digital/cognis-sources)
