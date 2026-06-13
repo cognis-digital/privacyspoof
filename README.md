@@ -9,6 +9,12 @@ matrix** so you know exactly what works where.
 > ⚠️ **Authorized & lawful use only.** Spoofing is for privacy, testing, and research. Some sites'
 > ToS prohibit it; you are responsible for how you use this.
 
+<!-- cognis:layman:start -->
+## What is this?
+
+privacyspoof is a toolkit that helps you browse the web with less tracking. It gives you ready-to-use filter lists to block ads and trackers in your browser, plus presets for faking your location, timezone, and browser identity so websites see a generic profile instead of your real one. You run a simple command to pick a browser fingerprint or fake city, and it prints the settings you need. It is designed for privacy researchers, developers who need to test geo-specific content, and anyone who wants practical, copy-paste browser hardening without needing to understand every technical detail.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 | Path | What |
@@ -21,6 +27,42 @@ matrix** so you know exactly what works where.
 | `spoof/sessions.md` | session/cookie isolation playbook |
 | `COMPATIBILITY.md` | browser support matrix per technique |
 | `privacyspoof.py` | CLI: pick a UA / geo, emit configs |
+
+<!-- cognis:install:start -->
+## Install
+
+`privacyspoof` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/privacyspoof/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/privacyspoof/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/privacyspoof.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/privacyspoof.git"  # uv
+pip install "git+https://github.com/cognis-digital/privacyspoof.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/privacyspoof.git
+cd privacyspoof && pip install .
+```
+
+Then run:
+```sh
+python -m privacyspoof --help
+```
+<!-- cognis:install:end -->
 
 ## Quick start
 
