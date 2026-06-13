@@ -9,6 +9,26 @@ matrix** so you know exactly what works where.
 > ⚠️ **Authorized & lawful use only.** Spoofing is for privacy, testing, and research. Some sites'
 > ToS prohibit it; you are responsible for how you use this.
 
+## Usage — step by step
+
+1. Get the kit — clone it (the CLI is a single stdlib script, `privacyspoof.py`):
+   ```bash
+   git clone https://github.com/cognis-digital/privacyspoof.git && cd privacyspoof
+   ```
+2. Emit a realistic user-agent for a target OS/browser:
+   ```bash
+   python privacyspoof.py ua --os windows --browser chrome
+   ```
+3. Pick a geolocation/timezone preset (defaults to `new_york`):
+   ```bash
+   python privacyspoof.py geo --city tokyo
+   ```
+4. Generate a blocklist in your ad-blocker's syntax and save it:
+   ```bash
+   python privacyspoof.py filters --format ublock > my-filters.txt
+   ```
+5. Import the list — in uBlock Origin: Dashboard -> Filter lists -> Import -> add `my-filters.txt` (or the raw URL of `filters/*.txt`). Check `COMPATIBILITY.md` first so your fingerprint stays consistent.
+
 ## Contents
 
 | Path | What |
