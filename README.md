@@ -9,6 +9,34 @@ matrix** so you know exactly what works where.
 > ⚠️ **Authorized & lawful use only.** Spoofing is for privacy, testing, and research. Some sites'
 > ToS prohibit it; you are responsible for how you use this.
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+"results": [
+  {
+    "ip": "192.168.1.100",
+    "country_code": "US",
+    "city": "New York",
+    "latitude": 40.7128,
+    "longitude": -74.0060
+  },
+  {
+    "ip": "10.0.2.15",
+    "country_code": "CA",
+    "city": "Toronto",
+    "latitude": 43.6532,
+    "longitude": -79.3832
+  }
+]
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 1. Get the kit — clone it (the CLI is a single stdlib script, `privacyspoof.py`):
